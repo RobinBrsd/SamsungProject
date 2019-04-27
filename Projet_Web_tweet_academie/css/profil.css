@@ -1,0 +1,39 @@
+#old-pp {
+    width: 55px;
+    margin-top: -2px;
+    margin-right: 13px;  
+}
+
+.edit-pp {
+    padding: 15px;
+}
+
+.edit-pp > input {
+    padding-left: 15px;
+    border-left: 1px solid lightgrey;
+}
+
+h5 > i {
+    color: #87C1EA;
+}
+
+#btn-edit-profil {
+    background-color: #87C1EA;
+    border:1px solid #87C1EA;
+    transition:0.4s;
+}
+
+#btn-edit-profil:hover {
+    background-color: #fff;
+    border:1px solid #87C1EA;
+    color: #87C1EA;
+    font-weight: bold;
+}
+
+@media screen and (max-width:994px){
+
+    #btn-tweet {
+        margin-top: 24px;
+    }
+
+}

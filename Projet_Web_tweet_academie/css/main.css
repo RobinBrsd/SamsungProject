@@ -1,0 +1,150 @@
+body, html {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e6ecf0;
+}
+
+/*** MAIN SECTION STYLE ***/
+#main-container {
+    padding: 1px;
+    padding-bottom: 20px;
+    border-radius: 2px;
+    margin-top:100px;
+}
+
+#big-pic {
+    width: 30%;
+    margin-top: -15px;
+}
+
+#tweet {
+    margin-bottom: 15px;
+}
+
+#tweet-box {
+    resize: none;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #87C1EA;
+    border-color: #87C1EA;
+    padding: 7px 10px;
+}
+
+#btn-tweet {
+    background-color: #87C1EA;
+    color: black;
+    width: 100%;
+    border-radius: 1px;
+    border: 1px solid #87C1EA;
+    border-color: #87C1EA;
+    margin : 0px auto;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+#btn-tweet:hover {
+    color: #87C1EA;
+    background-color: white;
+}
+
+.tweeter {
+    margin: auto;
+    width: 70%;
+}
+
+#card-right {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 6px 5px 5px rgb(150,150,150);
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 2px;
+}
+
+.profil-card-name {
+    display: inline-block;
+}
+
+.profil-card-name > p {
+    margin: 0 15px;
+}
+
+.profil-card-infos {
+    display: ruby;
+    display: -webkit-box;
+}
+
+.profil-card-infos > .stats-box > p {
+    margin: 0;
+    margin-bottom: 3px;
+    margin-right: 15px;
+}
+
+.stats-box {
+    margin-top: 10px;
+}
+
+.infos-title {
+    color: #87C1EA;
+    font-weight: bold;
+}
+
+#copyright {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 6px 5px 5px rgb(150,150,150);
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+@media screen and (max-width:994px){
+    #big-pic {
+        width: 19%;
+    }
+
+    #main-container {
+        margin-top: 70px;
+        padding: 15px;
+        padding-bottom: 0;
+    }
+
+    #card-right {
+        display: none;
+    }
+
+    #tweet {
+        box-shadow: 6px 5px 5px rgb(150,150,150);
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    #tweet > form {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    #tweet > form > textarea {
+        height: 40px;
+    }
+
+    #tweet > form > textarea:focus {
+        height: 135px;
+    }
+
+    #tweet > form > button {
+        padding: 2px 5px;
+    }
+
+    #copyright {
+        display: none;
+    }
+}
