@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> My Framework </title>
+        <meta name="description" content="Project Framework Bootstrap">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/my_framework.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <script src = "js/jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!-- GRID SHOW SECTION-->
+            <div class="row">
+                <article class="col-12-smart col-6-tablet col-4-desktop boite"> Hello 1 </article>
+                <article class="col-12-smart col-6-tablet col-4-desktop boite"> Hello 2 </article>
+                <article class="col-12-smart col-6-tablet col-4-desktop boite"> Hello 3 </article>
+            </div>
+
+            <!-- BOUTONS SECTION -->
+            <div class="row">
+                <button type="button" class="btn-green"> Green </button>
+                <button type="button" class="btn-red"> Red </button>
+                <button type="button" class="btn-blue"> Blue </button>
+                <button type="button" class="btn-classic"> Classic </button>
+                <button type="button" class="disabled"> Disable </button>
+            </div>
+
+            <!-- IMAGE SECTION -->
+            <div class ="row">
+                <img src="img/pp.png" class="img-rounded">
+                <img src="img/pp.png" class="img-circle">
+                <img src="img/pp.png" class="img-thumbnail">
+                <img src="img/pp.png" class="img-blur">
+            </div>
+
+            <!-- TEXTE SECTION -->
+            <div class="row">
+                <p class="text-muted"> text-muted </p>
+                <p class="text-primary"> text-primary </p>
+                <p class="text-success"> text-success </p>
+                <p class="text-info"> text-info </p>
+                <p class="text-warning"> text-warning </p>
+                <p class="text-error"> text-error </p>
+                <p><a href="" class="text-primary"> Link </a></p>
+            </div>
+
+            <!-- BACKGROUND SECTION ASSOCIER AU TEXTE -->
+            <div class="row">
+                <p class="bg-muted"> bg-muted </p>
+                <p class="bg-primary"> bg-primary </p>
+                <p class="bg-success"> bg-success </p>
+                <p class="bg-info"> bg-info </p>
+                <p class="bg-warning"> bg-warning </p>
+                <p class="bg-error"> bg-error </p>
+            </div>
+
+            <!-- ALERT SECTION -->
+            <div class="row">
+                <div class="alert-success col-3-desktop"> This is Alert-success message ! </div>
+                <div class="alert-info col-3-desktop"> This is Alert-info message ! </div> 
+                <div class="alert-warning col-3-desktop"> This is Alert-warning message ! </div> 
+                <div class="alert-danger col-3-desktop"> This is Alert-danger message ! </div>
+            </div>
+
+            <!-- HIDDEN / VISIBLE SECTION -->
+            <div class="row">
+                <p class="hidden-smart-down"> Hidden Smart DOWN </p>
+                <!-- <p class="visible-smart-down"> Visible Smart DOWN </p>  -->
+                <p class="hidden-smart-up"> Hidden Smart UP </p>
+                <!-- <p class="visible-smart-up"> Visible Smart UP </p>  -->
+
+                <p class="hidden-tablet-down"> Hidden Tablet DOWN </p>
+                <!-- <p class="visible-tablet-down"> Visible Tablet DOWN </p>  -->
+                <p class="hidden-tablet-up"> Hidden Tablet UP </p>
+                <!-- <p class="visible-tablet-up"> Visible Tablet UP </p>  -->
+
+                <p class="hidden-desktop-down"> Hidden Desktop DOWN </p>
+                <!-- <p class="visible-desktop-down"> Visible Desktop DOWN </p>  -->
+                <p class="hidden-desktop-up"> Hidden Desktop UP </p>
+                <!-- <p class="visible-desktop-up"> Visible Desktop UP </p>  -->
+
+                <!-- <p class="visible-print"> Visible Print </p>  -->
+                <p class="hidden-print"> Hidden Print </p>
+            </div>
+
+            <!-- NAVBAR SECTION -->
+            <nav class="navbar">
+                <a class="navbar-brand" href="#"> Navbar </a>
+                <form class="form-inline">
+                    <input class="form-control" type="search" placeholder="Search">
+                    <button class="btn btn-green" type="submit"> Search </button>
+                  </form>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav navbar-smart">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Features </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Pricing </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#"> DropDown </a>
+                      <ul class="dropdown-list">
+                          <li> <a href="#"> One </a></li>
+                          <li> <a href="#">  Two </a></li>
+                          <li> <a href="#">  Three </a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+              <!-- MODALS SECTION-->
+              <button class="modals-btn"> MODAL BTN </button>
+              <div class="modals">
+                <div class="modals-content">
+                        <div class="row">
+                                <article class="col-12-smart col-6-tablet col-4-desktop boite"> Hello 1 </article>
+                                <article class="col-12-smart col-6-tablet col-4-desktop boite"> Hello 2 </article>
+                                <article class="col-12-smart col-6-tablet col-4-desktop boite"> Hello 3 </article>
+                            </div>
+                    <p> Hey its alert modals popins blabla </p>
+                    <button class="modals-btn"> Close </button>       
+                </div>
+              </div>
+
+              <!-- INFOSBULLES SECTION -->
+              <div class="row">
+                <button class="tooltip" title="a" data-placement="top"> TOP BULLES </button>
+                <h2 class="tooltip" title="d" data-placement="left"> LEFT BULLES </h2>
+                <a class="tooltip" title="b" data-placement="right"> RIGHT BULLES </a>
+                <a class="tooltip" title="c" data-placement="bottom"> BOTTOM BULLES </a>
+             </div>
+            <script src="js/framework.js"></script>
+    </body>
+</html>

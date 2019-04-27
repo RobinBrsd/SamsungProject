@@ -1,0 +1,8 @@
+// MIXINS FRAMEWORK //
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -o-border-radius: $radius;
+    -moz-border-radisu : $radius;
+    border-radius: $radius;
+}

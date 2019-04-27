@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,aAAc;EACV,UAAU,EAAE,MAAM;;AAGtB,cAAe;EACX,UAAU,EAAE,OAAO",
+"sources": ["Framework/print.scss"],
+"names": [],
+"file": "print.css"
+}
