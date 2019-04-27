@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> My_Todo_List </title>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    </head>
+
+    <body>
+        <h1> My Todo List </h1>
+        <form id="form-task">
+            <input type="text" name ="task" placeholder="Task Name" required>
+            <input type="text" name="desc" placeholder="Description" required>
+            <input type="button" onclick="toggleTask()" value="Ajouter une tache">
+        </form>
+        <div id="error"></div><br/>
+        <div id="error2"></div>
+        
+        <div id="container">
+            <div id="faire">
+                <h2> A faire :</h2>
+                <ul></ul>
+            </div>
+
+            <div id="finie">
+                <h2> Finie :</h2>
+                <ul></ul>
+            </div>
+        </div>
+
+        <button id="button"> Save </button>
+        <button id="charge"> Load </button>
+
+        <div id="responsecontainer"></div>
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+</html>

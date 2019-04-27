@@ -1,0 +1,92 @@
+[
+  {
+    "question": "Who is the creator of PHP?",
+    "reponses": [
+      "Jack Sparrow", 
+      "Rasmus Lerdorf", 
+      "Tim Berners-Lee", 
+      "Dennis Ritchie"
+    ],
+    "solution": "2"
+  },
+  {
+    "question": "When was the first implementation of Blockchain Technology?",
+    "reponses": [
+      "2009", 
+      "2008", 
+      "2000", 
+      "1991"
+    ],
+    "solution": "1"
+  },
+  {
+    "question": "In which year was the first Playstation made?",
+    "reponses": [
+     "1994", 
+     "1992", 
+     "1990", 
+     "1995"
+    ],
+    "solution": "1"
+  },
+   {
+    "question": "What does PHP mean today ?",
+    "reponses": [
+     "PHP: Personal Home Page",
+     "PHP: Program High Performace",
+     "PHP: Hypertext Preprocessor",
+     "PHP: Hypertext Page"
+    ],
+    "solution": "3"
+  },
+   {
+    "question": "What is the last Sega console?",
+    "reponses": [
+     "Dreamcast", 
+     "Saturn", 
+     "S-Gage", 
+     "Lindbergh"
+    ],
+    "solution": "1"
+  },
+   {
+    "question": "What does www stands for ?",
+    "reponses": [
+    "Web wasabi world",
+    "World wide web",
+    "Wide web world",
+    "Web war song"
+    ],
+    "solution": "2"
+  },
+   {
+    "question": "What's the name of the UNIX creator?",
+    "reponses": [
+    "Mark Shuttleworth", 
+    "Kenneth Thompson",
+    "Linus Torvalds",
+    "Bill Gates"
+    ],
+    "solution": "2"
+  },
+  {
+    "question": "When was born Alan Turing ?",
+    "reponses": [
+    "1981", 
+    "1891", 
+    "1934",
+    "1912"
+    ],
+    "solution": "4"
+  },
+    {
+    "question": "What is the port for the http",
+    "reponses": [
+      "70",
+      "90",
+      "82",
+      "80"
+    ],
+    "solution": "4"
+  }
+]

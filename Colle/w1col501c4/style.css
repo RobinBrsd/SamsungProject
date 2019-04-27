@@ -1,0 +1,85 @@
+body, html 
+{
+    padding: 0;
+    margin: 0;
+}
+
+#container
+{
+    display: flex;
+    justify-content: center;
+}
+
+#finie 
+{
+    background-color: coral; 
+    padding: 20px; 
+    border-radius: 5px;
+    display: inline-block;
+    margin: 50px;
+    width:30%;
+}
+
+#faire 
+{
+    background-color: cadetblue; 
+    padding: 20px; 
+    border-radius: 5px;
+    display: inline-block;
+    margin: 50px;
+    width:30%;
+}
+
+h1 
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px
+}
+
+h2
+{
+    text-align: center;
+}
+
+form 
+{
+    text-align: center;
+    margin: 50px;
+}
+
+ul
+{
+    padding: 0;
+}
+
+li 
+{
+    list-style-type: none;
+    margin: 30px 5px;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+#error
+{
+    color: red;
+    text-align: center;
+}
+
+#error2
+{
+    color: red;
+    text-align: center;
+    display: block;
+}
+
+li > a 
+{
+    text-decoration: none;
+    color: red;
+    font-size: 13px;
+    width: 50%;
+}

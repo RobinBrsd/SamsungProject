@@ -1,0 +1,59 @@
+body, html 
+{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#big-form > form 
+{
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 45px;
+    padding-top: 20px;
+    margin-top: 50px;
+    width: 22%;
+    margin: 5px auto;
+}
+
+span
+{
+    display: flex;
+}
+
+h1
+{
+    margin-bottom: 40px;
+    width: 376px;
+    font-size: 22px;
+
+}
+
+.container > input, label
+{
+    display: inline-block;
+}
+
+.container > label 
+{
+    width: 130px;
+}
+
+#submit 
+{
+    margin: 50px;
+    padding: 10px 60px;
+    
+}
+
+.container
+{
+    text-align: left;
+    padding: 7px;
+}
+
+.qcontainer
+{
+    width: 50%;
+    margin: auto;
+}
