@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Puissance 4 </title>
+        <meta name="description" content="Game Puissance 4">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.js"></script>
+        <script src="js/Puissance4.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <!-- BOARD PARAM -->
+        <div id="board" ng-app='param' ng-controller='ctrl'>   
+               <div class='parametre'>
+                 <a class="close" ng-click="close()"> &#10060; </a>
+                 <hr/>
+                 <label for="col"> Colones : </label>
+                 <input name="col" type='text' ng-change="updateBoard()" ng-model='col'/>
+                 <label for="row"> Lignes : </label>
+                 <input name="row" type='text' ng-change="updateBoard()" ng-model='row'/>
+                 <label for="colorP1"> P1 Color : </label>
+                 <input name="colorP1" type='text' ng-change="updateBoard()" ng-model='colorP1'/>
+                 <label for="colorP2"> P2 Color : </label>
+                 <input name="colorP2" type='text' ng-change="updateBoard()" ng-model='colorP2'/>
+                 <label for="colorP2"> Grid Color : </label>
+                 <input name="colorP2" type='text' ng-change="updateBoard()" ng-model='colorGrid'/>
+                 <label for="colorP2"> BG Color : </label>
+                 <input name="colorP2" type='text' ng-change="updateBoard()" ng-model='colorBG'/>
+                 <button type="button" ng-click="close()"> Confirmer </button>
+               </div>
+               <div class="wheel hideR">
+                    <p ng-click="open()"> &#x2699; </p>
+                </div>
+
+                <h2 id="set"> Please Set Parameter </h2>
+        </div>
+
+        <!-- MODAL WINNER -->
+        <div class="modal">
+            <div class="modal-content">
+                <p id="winner"></p>
+                <button id="replay" type='button'> Replay !!! </button>
+            </div>
+        </div>
+    </body>
+</html>

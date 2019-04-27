@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body, html {
+    padding: 0;
+    margin: 0;  
+    background-color: #9ec3ff;
+    overflow: hidden;
+}
+
+#board {
+    display: flex;
+}
+
+.parametre {
+    position: absolute;
+    left: 0px;
+    z-index: 999;
+    background-color:rgba(5,5,5,0.55);
+    padding: 20px;
+    border-radius: 3px;
+    height: 100%;
+    display: inline-block;
+    width: 250px;
+    padding-left: 20px;
+    transition: all ease-in-out 0.8s;
+}
+
+.close {
+    width: 96%;
+    display: inline-block;
+    text-align: end;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.parametre > button {
+    margin: 2px;
+    padding: 15px 10px;
+    padding-top: 18px;
+    width: 95%;
+    background-color: deeppink;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    animation: fadeTXT 1s ease-in-out infinite;
+}
+
+.parametre > button:hover {
+    background-color: white;
+    color: deeppink;
+    border-color: deeppink;
+}
+
+.parametre > input {
+    height: 25px;
+    margin: 2px;
+    padding: 3px;
+    padding-left: 3px;
+    background-color: rgba(180,180,180,0.7);
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    width: 220px;
+    transition: all ease 0.4s;
+    margin-bottom: 13px;
+}
+
+.parametre > input:focus {
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+}
+
+.parametre > hr {
+    margin-bottom: 20px;
+    border: 2px solid #9ec3ff;
+    border-radius: 5px;
+    margin-top: 15px;
+    position: relative;
+    width: 109%;
+}
+.parametre > label {
+    font-family: 'Press Start 2P', cursive;
+    color: deeppink;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+#game {
+    background-color: #1461e0;
+    display: block;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 10px auto;
+    border-radius: 8px;
+    padding: 23px 30px;
+    border: 3px solid darkblue;
+    z-index: 1;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(235,235,235);
+    text-transform: uppercase;
+    margin-top: 3px;
+    border-bottom: 3px solid darkblue;
+    padding-bottom: 20px;
+}
+
+#color-error {
+    margin-top: 100px;
+    padding: 20px;
+    border:  3px solid darkblue;
+    color: red;
+}
+
+.spot {
+    border: 2px solid rgb(235,235,235);
+    margin: 5px;
+    display: inline-block;
+    border-radius: 50%; 
+    background-color:rgba(255,255,255,0.63);
+    transition:background 2s;
+    z-index: -1;
+}
+
+#area1 {
+    width: 497px;
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    left: -44px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 15px;
+    border: 13px solid #fff;
+    border-radius: 100px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+#area1 > p {
+    margin-left: 30px;
+    border-left: 4px solid;
+    padding-left: 20px;
+}
+
+#area2 {
+    width: 497px;
+    display: inline-block;
+    position: absolute;
+    right: -44px;
+    top: 45px;
+    text-align: end;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 15px;
+    border: 13px solid #fff;
+    border-radius: 100px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+#area2 > p {
+    margin-right: 30px;
+    border-right: 4px solid;
+    padding-right: 20px;
+}
+
+.draw {
+    font-size: 20px;
+}
+
+#undoP1 {
+    width: 330px;
+    display: inline-block;
+    position: absolute;
+    top: 165px;
+    left: -44px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 15px;
+    border: 13px solid #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#undoP2 {
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+    width: 330px;
+    display: inline-block;
+    position: absolute;
+    top: 165px;
+    right: -44px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 15px;
+    border: 13px solid #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+#turnP1 {
+    width: 230px;
+    display: inline-block;
+    position: absolute;
+    top: 233px;
+    left: -44px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 15px;
+    border: 13px solid #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 0.5s;
+}
+
+#turnP2 {
+    transition: all ease-in-out 0.5s;
+    width: 230px;
+    display: inline-block;
+    position: absolute;
+    top: 233px;
+    right: -44px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 15px;
+    border: 13px solid #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+i {
+    font-size: 112px;
+    visibility: hidden;
+    display: block !important;
+}
+
+.drop {
+    position: absolute;
+    transition: 0.75s ease all;
+    z-index: -200;
+    top: 0px;
+}
+
+.down {
+    visibility: visible;
+    animation: bounce 0.50s ease 3 alternate;
+    z-index: 2;
+}
+
+.modal {
+    position: absolute;
+    top:0;
+    z-index: -5;
+    background-color: rgba(5,5,5,0.7);
+    width: 100%;
+    height: 120%;
+    opacity: 0;
+    transition: 3s all ease-in-out;
+}
+
+.modal-content {
+    background-color: goldenrod;
+    color: white;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    padding: 25px;
+    margin: 35vh auto;
+    width: 500px;
+    text-align: center;
+    border-radius: 50px;
+    border: 17px solid;
+}
+
+#replay {
+    cursor: pointer;
+    padding: 10px 30px;
+    margin-top: 20px;
+    width: 250px;
+    background-color: gold;
+    border-radius: 12px;
+    border: 4px solid #fff;
+    color: white;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.wheel {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(5,5,5,0.4);
+    padding: 1px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 12px;
+    transition: all ease-in-out 1s;
+    z-index: 999;
+}
+
+.wheel > p {
+    color: #9ec3ff;
+    font-size: 30px;
+    margin: 0px 2px;
+    margin-bottom: 5px;
+    transition: all ease-in-out 0.6s;
+    z-index: 999;
+}
+
+.wheel > p:hover {
+    color: #fff;
+}
+
+.hideR {
+    right: -390px !important;
+    transition: all ease-in-out 1s;
+}
+
+.hide {
+    left: -888px !important;
+    transition: 2s all ease-in-out;
+}
+
+@keyframes bounce{
+    from{transform: translateY(0px);}
+    50%{transform: translateY(-75px);}
+    to{transform: translateY(10px);}
+}
+
+#set {
+    display: block;
+    margin-left: 735px;
+    margin-top: 40vh;
+    color: deeppink;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    padding: 19px 30px;
+    border-right: 2px solid;
+    border-left: 2px solid deeppink;
+    padding-top: 30px;
+    animation: fade 1s ease infinite;
+    font-size: 28px;
+}
+
+@keyframes fade{
+    from{border-color: deeppink;}
+    50%{border-color: deeppink;;}
+    to{border-color: #9ec3ff;}
+}
+
+@keyframes fadeTXT{
+    from{color: white;}
+    50%{color: white;}
+    to{color: deeppink;}
+}

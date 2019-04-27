@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body, html {
+    padding: 0;
+    margin: 0;  
+    background-color: #9ec3ff;
+    overflow: hidden;
+}
+
+#board {
+    display: flex;
+}
+
+#game {
+    background-color: #1461e0;
+    display: block;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 10px auto;
+    border-radius: 8px;
+    padding: 23px 30px;
+    border: 3px solid darkblue;
+    z-index: 1;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(235,235,235);
+    text-transform: uppercase;
+    margin-top: 3px;
+    border-bottom: 3px solid darkblue;
+    padding-bottom: 20px;
+}
+
+.spot {
+    border: 2px solid rgb(235,235,235);
+    margin: 5px;
+    display: inline-block;
+    border-radius: 50%; 
+    background-color:rgba(255,255,255,0.63);
+    transition:background 2s;
+    z-index: -1;
+}
+
+#area1 {
+    width: 450px;
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    left: -44px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 15px;
+    border: 13px solid #fff;
+    border-radius: 100px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#area1 > p {
+    margin-left: 30px;
+    border-left: 4px solid;
+    padding-left: 20px;
+}
+
+#area2 {
+    width: 450px;
+    display: inline-block;
+    position: absolute;
+    right: -44px;
+    top: 45px;
+    text-align: end;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 15px;
+    border: 13px solid #fff;
+    border-radius: 100px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#area2 > p {
+    margin-right: 30px;
+    border-right: 4px solid;
+    padding-right: 20px;
+}
+
+#undop1 {
+    width: 330px;
+    display: inline-block;
+    position: absolute;
+    top: 165px;
+    left: -44px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 15px;
+    border: 13px solid #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.draw {
+    font-size: 20px;
+}
+
+#undop2 {
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+    width: 330px;
+    display: inline-block;
+    position: absolute;
+    top: 165px;
+    right: -44px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 15px;
+    border: 13px solid #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+i {
+    font-size: 112px;
+    visibility: hidden;
+    display: block !important;
+}
+
+.drop {
+    position: absolute;
+    transition: 0.75s ease all;
+    z-index: -200;
+    top: 0px;
+}
+
+.down {
+    visibility: visible;
+    animation: bounce 0.50s ease 3 alternate;
+    z-index: 2;
+}
+
+.modal {
+    position: absolute;
+    top:0;
+    z-index: -5;
+    background-color: rgba(5,5,5,0.7);
+    width: 100%;
+    height: 120%;
+    opacity: 0;
+    transition: 3s all ease-in-out;
+}
+
+.modal-content {
+    background-color: goldenrod;
+    color: white;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    padding: 25px;
+    margin: 35vh auto;
+    width: 500px;
+    text-align: center;
+    border-radius: 50px;
+    border: 17px solid;
+}
+
+#replay {
+    cursor: pointer;
+    padding: 10px 30px;
+    margin-top: 20px;
+    width: 250px;
+    background-color: gold;
+    border-radius: 12px;
+    border: 4px solid #fff;
+    color: white;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+}
+
+@keyframes bounce{
+    from{transform: translateY(0px);}
+    50%{transform: translateY(-75px);}
+    to{transform: translateY(10px);}
+}
