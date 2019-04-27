@@ -1,0 +1,19 @@
+||| ALG_PUSH_SWAP |||
+
+-- Jour 1 :
+Creation du repo git et prise en main du sujet !
+
+-- Jour 2 :
+Codage des fonctions basique demander dans le sujet !
+
+-- Jour 3 :
+Recherche d'algo de tri et implementation d'algo de tri (sans succes) !
+
+-- Jour 4 :
+Creation et implementation de mon propre algo de tri !
+
+-- Jour 5 : 
+Optimisation de mon Algo !
+
+-- Jour 6 et 7 :
+Week end :)
