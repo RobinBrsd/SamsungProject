@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html, body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+}
+
+/*** HEADER STYLE ***/
+header
+{
+    background-color: rgba(5,5,25,0.6);
+    padding: 35px 75px;
+    border-bottom: 2px solid #fff;
+}
+
+header > div 
+{
+    display: ruby;
+}
+
+header > div > h1 > a
+{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin: 6px;
+    text-decoration: none;
+}
+
+h1
+{
+    margin: 0;
+}
+
+header > button
+{
+    float: right;
+    background-color: rgba(5,5,25,0.1);
+    border : 3px solid #fff;
+    padding: 10px;
+    border-radius: 30px;
+    color: #fff;
+    width:165px;
+    font-weight: bold;
+}
+
+header > button:hover
+{
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+/*** MAIN STYLE ***/
+main > div
+{
+    text-align: center;
+    background-color: rgba(5,5,25,0.6);
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25vh;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main > div > i
+{
+    font-size: 40px;
+    margin: 10px;
+}
+
+main > div > h2
+{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+#main_form 
+{
+    background-color: rgba(5,5,25,0.6);
+    padding: 20px;
+    border-color: 2px solid black;
+    border-radius: 3px;
+    width: 30%;
+    opacity: 0;
+    margin: auto;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    padding-bottom: 0;
+    transition: all 3s ease;
+    margin-top: 20px;
+}
+.container
+{
+    margin: auto;
+    width: 70%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container > h2 
+{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 5px;
+}
+
+.container > input 
+{
+    width: 100%;
+}
+
+.container > .sexe
+{
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 10px; 
+}
+
+.sexe > p
+{
+    margin-bottom: 5px;
+}
+
+.sexe > div > label 
+{
+    width: 90px;
+    display: inline-table;
+}
+
+#a
+{
+    color:#22A7F0;
+    width: 15px;
+
+}
+
+#b
+{
+    color:#FD6C9E;
+    width: 15px;
+}
+.container > label
+{
+    float: left;
+    width: 300px;
+    margin: 5px 0px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.button 
+{
+    margin: 30px auto;
+    width: 40%;
+    display: block;
+    background-image: url("../img/degrade_green.png");
+    background-position: center;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: ease-in-out 1s all;
+}
+
+.button:hover
+{
+    background-position: right;
+    transition: ease-in-out 1s all;
+}
+
+/*** Login Form ***/
+#connection
+{
+    background-color: rgba(5,5,25,0.6);
+    padding: 20px;
+    border-color: 2px solid black;
+    border-radius: 3px;
+    width: 30%;
+    opacity: 0;
+    margin: auto;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    padding-bottom: 0;
+    transition: all 3s ease;
+    margin-top: 20vh;
+}
+
+#inscrit 
+{
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-align: right;
+    margin: 30px 20px;
+    cursor: pointer;
+}
+
+.hidden
+{
+    position: absolute;
+    top: 0px;
+    left: -999px;
+    transition: 1.2s all ease;
+    opacity: 0;
+}
+

@@ -1,0 +1,32 @@
+---------------------------------------------------------------
+|||               *** My_Meetic Project ***                 |||
+---------------------------------------------------------------
+
+| Resumer : 
+
+- Creer un site de rencontre a la manieres de Meetic.
+- Programation orienter objet.
+- Architecture MVC.
+- Pas de Plugins.
+
+
+| Definitions des pages principales du site :
+
+- index.php = redirecteur vers les autres pages.
+- home.php = page d'accueil du site -> Connexion / Inscription.
+- inscription.php = page d'inscription a fin de creer un compte pour pouvoir se connecter et acceder au site.
+- connexion.php = page de connexion a fin d'acceder au contenu du site.
+- account.php = page recapitulatif, d'admistations du compte de l'utilisateurs.
+- rencontre.php = page de recherche, affichage des autres membres correspondant au critere.
+
+
+| Definitions de la databases, My_Meetic_Users :
+
+- Table users, primaryKey = id_users
+
+
+| Structure des tables :
+
+- Table users = 
+       Columns = id_users(pk), nom, prenom, sexe, date de naissance, email, password, statut
+

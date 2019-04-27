@@ -1,0 +1,68 @@
+---------------------------------------------------------------
+|||               *** My_Meetic Project ***                 |||
+---------------------------------------------------------------
+
+| Resumer : 
+
+- Ceci est un journal de bord dans le quelle je decrirais de maniere bref mon avancer sur le projet.
+
+
+-----------------------------
+||| *** DAY AFTER DAY *** |||
+-----------------------------
+
+| Day 01 = 17/12/2018 :
+
+- J'ai rien fait.
+
+| Day 02 = 18/12/1018 :
+
+- Definition de la structure globale du site.
+- Definition de la structure de la database du site.
+
+| Day 03 = 19/12/2018 :
+
+- Creation .htacces
+- Creation Page Home With Connexion / Inscription
+
+| Day 04 = 20/12/2018 :
+
+- Creation et etude de la methode MVC
+
+| Day 05 = 21/12/2018 :
+
+- Finitions de la page Home / Connexion / Inscription
+
+| Day 06 = 22/12/2018 : Vacances
+| Day 07 = 23/12/2018 : Vacances
+| Day 08 = 24/12/2018 : Vacances
+| Day 09 = 25/12/2018 : Vacances
+| Day 10 = 26/12/2018 : Vacances
+| Day 11 = 27/12/2018 : Vacances
+| Day 12 = 28/12/2018 : Vacances
+| Day 13 = 29/12/2018 : Vacances
+| Day 14 = 30/12/2018 : Vacances
+| Day 15 = 31/12/2018 : Vacances
+| Day 16 = 01/01/2018 : Vacances
+| Day 17 = 02/01/2018 : Vacances
+| Day 18 = 03/01/2018 : Vacances
+| Day 19 = 04/01/2018 : Vacances
+| Day 20 = 05/01/2018 : Vacances
+
+| Day 21 = 06/01/2018 :
+
+- Replonge dans mon code qui me parait 'chinois' apres 2 semaines
+- Creation de la page rencontre
+- Creation du systeme de login / logout
+- Creation Espace membre
+- Mise en place du syteme de reset de mdp et d'email
+
+| Day 22 = 07/01/2018 : FOCUS FRAMEWORK BOOTSTRAP
+| Day 23 = 08/01/2018 : FOCUS FRAMEWORK BOOTSTRAP
+| Day 24 = 09/01/2018 : FOCUS FRAMEWORK BOOTSTRAP
+| Day 25 = 10/01/2018 : FOCUS FRAMEWORK BOOTSTRAP
+
+| Day 26 = 11/01/2018 :
+
+-
+

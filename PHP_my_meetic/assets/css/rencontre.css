@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html, body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+}
+
+/*** HEADER STYLE ***/
+header
+{
+    background-color: rgba(5,5,25,0.6);
+    padding: 35px 75px;
+    border-bottom: 2px solid #fff;
+}
+
+header > div 
+{
+    display: ruby;
+}
+
+header > div > h1 > a
+{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin: 6px;
+    text-decoration: none;
+}
+
+header > a > i 
+{
+    margin-right: 4px;
+}
+
+h1
+{
+    margin: 0;
+}
+
+.member
+{
+    float: right;
+    background-color: rgba(5,5,25,0.1);
+    border : 3px solid #fff;
+    padding: 10px 17px;
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+.member:hover
+{
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+#search {
+    width: 40%;
+    background-color: rgba(5,5,25,0.6);
+    padding: 20px;
+    display: ruby;
+    color: white;
+    padding-bottom: 37px;
+    border-radius: 3px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid #fff;
+}
+
+#sexe {
+    margin-left: 17px;
+}
+
+.sexe-box {
+    display: inline-table;
+    width: 97px;
+    margin-right: 15px;
+}
+
+#a {
+    color:#22A7F0;
+}
+
+#b {
+    color:#FD6C9E;
+}
+
+.container {
+    width: 30%;
+    margin: 20px 70px;
+}
+
+.container > h2 {
+    background-color: rgba(5,5,25,0.6);
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    margin: 12px 0px;
+    border-radius: 3px;
+    border-top: 2px solid white;
+    border-left: 2px solid #fff;
+    padding-right: 100px;
+}

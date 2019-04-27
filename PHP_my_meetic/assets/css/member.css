@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html, body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    background-color:rgb(220,220,220);
+    background-size: cover;
+}
+
+/*** HEADER STYLE ***/
+header
+{
+    background-color: rgba(5,5,25,0.6);
+    padding: 35px 75px;
+    border-bottom: 2px solid #fff;
+}
+
+header > div 
+{
+    display: ruby;
+}
+
+header > div > h1 > a
+{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin: 6px;
+    text-decoration: none;
+}
+
+header > a > i 
+{
+    margin-right: 4px;
+}
+
+h1
+{
+    margin: 0;
+}
+
+.member
+{
+    float: right;
+    background-color: rgba(5,5,25,0.1);
+    border : 3px solid #fff;
+    padding: 10px 17px;
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+.member:hover
+{
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+/*** MAIN STYLE ***/
+
+.container
+{
+    padding: 30px;
+    margin: 75px auto;
+    width: 30%;
+
+    background-color: rgb(245,245,245);
+    border-radius: 5px;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.container > h2
+{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 2px solid;
+    padding-bottom: 18px;
+}
+
+.container > p > span
+{
+    font-weight: bold;
+}
+
+.container > form > input 
+{
+    width: 50%;
+}
+
+.container > form > h3
+{
+    margin-bottom: 5px;
+}
+
+.container > a 
+{
+    margin-top: 30px;
+    display: block;
+    text-align: right;
+    color: black;
+}
