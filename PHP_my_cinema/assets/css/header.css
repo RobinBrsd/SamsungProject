@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+
+body, html
+{
+    margin: 0;
+    padding: 0;
+}
+
+video 
+{
+    width: 100%;
+    opacity: 0.7;
+    object-fit: cover;
+    height: 768px;
+}
+
+body 
+{
+    background-size: cover;
+    background-image: url("../img/background");
+}
+
+nav
+{
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 2px solid #fff;
+}
+
+#logo
+{
+    font-family: 'Baloo Bhaina', cursive;
+    display: inline-block;
+    font-size: 32px;
+    margin: 0px 25px;
+    padding: 30px;
+    margin-right: 50px;
+    padding-right: 70px;
+    border-right: 2px solid #fff;
+}
+
+#logo > a 
+{
+    text-decoration: none;
+    color: #53CAC6;
+}
+
+#logo > a > span 
+{
+    color: #fff;
+    margin-left: 5px;
+    font-size: 28px;
+    text-transform: none;
+}
+
+ul > li 
+{
+    list-style-type: none;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 15px;
+    transition: 0.6s ease all;
+}
+
+ul > li > a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin: 15px;
+    margin-right: 0px;
+}
+
+ul > li > a > i
+{
+    margin-left: 15px;
+    border-left: 2px solid #fff;
+    padding: 15px;
+    font-size: 23px;
+}
+
+#nav__logo-one
+{
+    border-left: none;
+    margin: 0;
+    padding-left: 6px;
+}
+
+ul > li:hover
+{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.active 
+{
+    background-color: #278291;
+}

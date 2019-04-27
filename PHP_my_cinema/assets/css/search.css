@@ -1,0 +1,172 @@
+@keyframes border-pulsate {
+    0%   { border-color: rgba(255, 255, 255, 1); }
+    50%  { border-color: rgba(255, 255, 255, 0); }
+    100% { border-color: rgba(255, 255, 255, 1); }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body, html
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    background-size: cover;
+    background-image: url("../img/background");
+}
+
+form
+{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 15%;
+}
+
+label 
+{
+    background-color: rgba(0,0,0,0.2);
+    padding: 20px 15px;
+    padding-top: 37px;
+    border-radius: 3px;
+    border-left: 3px solid #fff;
+    transition: 0.5s all ease;
+}
+
+label > i 
+{
+    color: #fff;
+    font-size: 40px;
+}
+
+.invisible
+{
+    position: absolute;
+    left: -999px;
+    transition: 1.2s all ease;
+}
+
+.visible-title
+{
+    left: auto;
+    position: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.visible-form
+{
+    margin-top: 10%;
+}
+
+#input
+{
+    transition: 0.5s all ease;
+    animation: border-pulsate 2s infinite;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.btn__container
+{
+    margin-top: 20px;
+    width: 79%;
+    margin: auto;
+    text-align: left;
+}
+
+select
+{
+    padding: 10px;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    background-position: top;
+    background-image: url(../img/background);
+    margin-top: 20px;
+    transition: 0.5s all ease;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+.arrow-a
+{
+    position: absolute;
+    left: 682px;
+    top: 422px;
+    color: white;
+    font-size: 23px;
+    transition: 1s all ease;
+}
+
+.arrow-b
+{
+    position: absolute;
+    left: 957px;
+    top: 422px;
+    color: white;
+    font-size: 23px;
+    transition: 1s all ease;
+}
+
+#submit 
+{
+    padding: 10px;
+    border: 2px solid white;
+    font-weight: bold;
+    width: 159px;
+    border-radius: 100px;
+    color: white;
+    background-image: url(../img/background);
+    float: right;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: 0.5s all ease;
+}
+
+.visible-inputs
+{
+    position: inherit;
+    width: 70%;
+    left: auto;
+    background-color: rgba(0,0,0,0.2);
+    padding: 31px 15px;
+    padding-bottom: 18px;
+    border-radius: 3px;
+    border: none;
+    border-left: 3px solid #fff; 
+}
+
+.visible-btn
+{
+    position: inherit;
+    left: auto;
+}
+
+.open 
+{
+    width: 100%;
+    border: none;
+}
+
+label:hover 
+{
+    cursor: pointer;
+}
+
+#submit:hover
+{
+    cursor: pointer;
+    background-position: right;
+    background-image: url(../img/background);
+}

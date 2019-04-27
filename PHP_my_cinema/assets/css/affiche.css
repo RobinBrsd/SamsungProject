@@ -1,0 +1,43 @@
+.affiche 
+{
+    width: 18%;
+}
+
+.resum 
+{
+    height: 90px;
+}
+
+.resultat
+{
+    width: 80%;
+    margin: 120px auto;
+}
+
+.container
+{
+    text-align: inherit;
+}
+
+.container > img
+{
+    border: none;
+    float: none;
+    width: 220px;
+    height: 237px;
+    margin: auto;
+    display: grid;
+    padding-right: none;
+}
+
+.container > h2
+{
+    font-size: 23px;
+    height: 56px;
+    padding: 15px 0px;
+}
+
+.resultat > h3
+{
+    top: 210px;
+}

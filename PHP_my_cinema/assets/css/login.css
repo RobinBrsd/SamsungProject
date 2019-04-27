@@ -1,0 +1,38 @@
+#login-form
+{
+    padding: 50px;
+    padding-top: 30px;
+    background-color: rgba(0,0,0,0.3);
+    width: 15%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 3px;
+    border: 2px solid #fff;
+}
+
+#login-form > input 
+{
+    width: 92%;
+    margin: 5px;
+}
+
+#login-form > h2
+{
+    margin-top: 0px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#login-form > button 
+{
+    margin: 5px;
+}
+
+#inscription 
+{
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
