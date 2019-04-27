@@ -1,0 +1,433 @@
+html, body 
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+/************ Header Style ! ********************************************/
+
+header 
+{
+    background-color: #ccffff;
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+}
+
+.header__social-logo
+{
+    padding: 15px;
+    width: 60%;
+    margin-right:auto;
+    margin-left:auto;
+    cursor: pointer;
+}
+
+nav 
+{
+    background-color: #9a99ff;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul 
+{
+    display: inline-block;
+    padding: 0px;
+    width: 69%;
+}
+
+.img__container
+{
+    float: left;
+    margin-right: 17%;
+}
+
+nav > ul > li 
+{
+    display: inline-block;
+    list-style-type: none;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+nav > ul > li > a 
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav > ul > li > a > i 
+{
+    color: lightgray;
+}
+
+.header__menu__hidden
+{
+    position: absolute;
+    list-style-type: none;
+    left: -999em;
+    padding: 0;
+    margin-top: 2px;
+    background-color: lightgray;
+    z-index: 999;
+}
+
+.header__menu__hidden > li 
+{
+    border-bottom: 1px solid black;
+    padding: 15px 22px;
+    font-weight: bold;
+}
+
+.header__menu__hidden-container:hover ul 
+{
+    left: auto;
+    transition: all 0.8s;
+}
+
+.header__menu__hidden > li:hover
+{
+    color: red;
+    background-color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/***** Slide Show Style *********************/
+
+.container__slider
+{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.header__slider
+{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.header__slider__hidden
+{
+    position: relative;
+    display: none;
+}
+
+.visible
+{
+    display: inherit;
+}
+
+.header__slider-text
+{
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    text-align: initial;
+    padding: 15px 0px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.header__slider-text > p
+{
+    margin: 0px 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.slider__img
+{
+    position: absolute;
+    width: 100%;
+    bottom: 170px;
+}
+
+.slider__prev
+{
+    padding: 15px;
+    float: left;
+    object-fit: cover;
+    object-position: -20% 0;
+    width: 59px;
+    height: 50px;
+}
+
+.slider__next
+{
+    padding: 15px;
+    float: right;
+    object-fit: cover;
+    object-position: 120% 0;
+    width: 59px;
+    height: 50px;
+}
+
+.slider__dot
+{
+    margin-top: 8px
+}
+
+.slider-dot__container
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider__dot-crop
+{
+    width:25px;
+    height:25px;
+    overflow:hidden;
+    padding: 6px;
+}
+
+.slider__dot-crop-red
+{
+    transform: rotateX(180deg);
+    margin-top: 0;
+}
+
+.slider__prev:hover, .slider__next:hover, .slider__dot:hover
+{
+    cursor: pointer;
+}
+
+/************ Header Style ! ********************************************/
+
+.main__container
+{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main__block 
+{
+    padding: 15px;
+    margin-top: 30px;
+    width: 27%;
+}
+
+.main__block__top
+{
+    background-color: #9a99ff;
+    padding: 15px;
+}
+
+.main__block__top > p 
+{
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width:65%;
+    font-size: 20px;
+    float: right;
+    margin:0;
+}
+
+.main__block > a 
+{
+    color: red;
+    text-decoration: none;
+}
+
+.main__destinations
+{
+    width: 87%;
+}
+
+.main__slider
+{
+    text-align: center;
+}
+
+.main__slider-box 
+{
+    margin-top: 50px;
+    display: none;
+}
+
+.main__slider__arrow
+{
+    position: relative;
+    width: 60%;
+    margin: auto;
+}
+
+.main__slider-crop
+{
+    position: absolute;
+    width: 100%;
+    bottom: 110px;
+}
+
+.active
+{
+    display: inline-block;
+}
+
+.main__destinations > hr
+{
+    border: 1px solid lightgray;
+}
+
+.main__slider-box > img
+{
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.main__slider-box > p
+{
+    font-weight: bold;
+}
+
+.slider__arrow
+{
+    position: absolute;
+    width: 100%;
+    bottom: 170px;
+}
+
+.main__slider__prev
+{
+    padding: 15px;
+    float: left;
+    object-fit: cover;
+    object-position: -20% 0;
+    width: 27px;
+    height: 27px;
+    z-index: 999;
+}
+
+.main__slider__next
+{
+    padding: 15px;
+    float: right;
+    object-fit: cover;
+    object-position: 120% 0;
+    width: 27px;
+    height: 27px;
+}
+
+.main__slider__next, .main__slider__prev
+{
+    cursor: pointer;
+}
+
+/***************** Main 2nd part *****************************************/
+
+.main__bg
+{
+    background-color:  #ccffff;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 30px;
+}
+
+.main__box
+{
+    margin: 30px;
+    width: 60%;
+}
+
+.main__box > hr 
+{
+    border: 1px solid lightgray;
+}
+
+.main__box > div > img 
+{
+    float: left;
+    margin-right: 15px;
+}
+
+.main__box > div > p 
+{
+    padding-bottom: 50px;
+}
+
+.main__box-3
+{
+    width: 57%;
+    margin: auto;
+}
+
+.main__box-3 > hr 
+{
+    border: 1px solid lightgray;
+}
+
+.main__box-3 > button 
+{
+    background-color: #80ac69;
+    padding: 12px;
+    width: 12%;
+    color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 3px 15px rgba(0,0,0,.4);
+    -moz-box-shadow: 0px 3px 15px rgba(0,0,0,.4);
+    box-shadow: 0px 3px 15px rgba(0,0,0,.4);
+}
+
+.main__box-3 > button:hover
+{
+    cursor: pointer;
+    transition: ease all 4s;
+    background-color: white;
+    color: #80ac69;
+    border-color: #80ac69;
+    font-weight: bold;
+}
+
+/***************** Footer Style *****************************************/
+
+footer
+{
+    background-color : #9a99ff;
+    padding: 20px;
+}
+
+.footer__container
+{
+    width: 57%;
+    display: flex;
+    margin: auto;
+}
+
+.footer__link
+{
+    margin-top: 20px;
+}
+
+.footer__link > a
+{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.footer__container > p
+{
+    margin-left: 10px;
+    padding-bottom: 30px;
+    color: grey;
+}

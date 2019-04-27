@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url(http://fr.allfont.net/allfont.css?fonts=droid-sans);
+@import url(http://fr.allfont.net/allfont.css?fonts=droid-serif);
+
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+/*** Style Bar Navigation ***/
+
+nav {
+    background-image: url("../maquette/misc/grille.png");
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+    background-position: center;
+}
+
+nav > ul
+{
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+}
+
+nav > img
+{
+    text-align: left;
+    margin-right: 8%;
+}
+
+nav > ul > li
+{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 12px;
+    width: 140px;
+}
+
+nav > ul > li > h5
+{
+    margin: 0;
+    padding:0px 5px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    color: gray;
+    font-size: 16px;
+}
+
+nav > ul > li > a
+{
+    display: block;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-family: 'Droid Serif', serif;
+    font-size: 12px;
+    color: #888888;
+    margin: 7px 0px;
+}
+
+.hr-nav
+{
+    width: 100%;
+    border: 3px solid black;
+    margin-top: 7px;
+    margin-bottom: 12px;
+}
+
+.orange
+{
+    border-color: #f76900;
+}
+.jaune
+{
+    border-color: #fcd04a;
+}
+.vert
+{
+    border-color: #b9d482;
+}
+.bleu
+{
+    border-color: #3d92c2;
+}
+.violet
+{
+    border-color: #c078d0;
+}
+
+.transparent-bot
+{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    height: 10px;
+    background-image: url("../maquette/misc/transparent.png");
+}
+
+.transparent-top
+{
+    border-top: 2px solid rgba(0, 0, 0, 0.05);;
+    height: 10px;
+    background-image: url("../maquette/misc/transparent.png");
+}
+
+/*** Style Main ***/
+main
+{
+    text-align: center;
+}
+
+iframe
+{
+    margin: 50px;
+}
+
+.middle-page-title
+{
+    background-image: url("../maquette/misc/grille.png");
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    background-position: center;
+    font-size: 22px;
+}
+
+#middle-menu
+{
+    text-align: left;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.middle-box > h2
+{
+    color: #e7854f;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.middle-box-img > h2
+{
+    color: #e7854f;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.middle-box > a
+{
+    text-decoration: none;
+    font-family: "Droid Serif", serif;
+    font-style: italic;
+    color: #a4a1a1;
+}
+
+.middle-box-img > a
+{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Droid Serif", serif;
+    font-style: italic;
+    color: #a4a1a1;;
+}
+
+.middle-box
+{
+    font-family: "Droid Sans", sans-serif;
+    font-size: 13px;
+    display: inline-block;
+    width: 10%;
+    color: #78777b;
+    padding: 10px;
+    margin : 10px
+}
+
+.middle-box-img
+{
+    font-family: "Droid Sans", sans-serif;
+    display: inline-block;
+    width: 30%;
+    color: #78777b;
+    padding: 10px;
+    margin : 10px;
+}
+
+.middle-box-img > p
+{
+    font-size: 13px;
+}
+
+.middle-box-img > div > img
+{
+    width: 25%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    padding: 8px;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+.golf
+{
+    border : 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 1px;
+    padding-bottom: 20px;
+    padding-top: 13px;
+    height: 100%;
+}
+
+.date
+{
+    font-family: "Droid Serif", serif;
+    font-size: 12px;
+    font-style: italic;
+    color: #b4b2b9;
+}
+
+.img-space
+{
+    margin-top: 5px;
+}
+
+.fast-foods
+{
+    margin-top: 40px;
+}
+
+/*** Style Footer ***/
+#footer-main
+{
+    display: flex;
+    justify-content: center;
+    background-image: url("../maquette/misc/grille.png");
+    font-family: "Droid Sans", sans-serif;
+}
+
+.footer-box
+{
+    width: 13%;
+    padding: 10px;
+    text-align: left;
+    color: #767676;
+}
+
+.footer-box > h3
+{
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    color: #a9a2a1;
+    font-size: 17px;
+}
+
+.footer-box > a
+{
+    color: #9c9c9c;
+}
+
+.footer-box > div
+{
+    padding: 10px 0px;
+}
+
+.footer-box > p
+{
+    font-size: 13px;
+}
+
+.footer-box > div > p
+{
+    display: inline-block;
+    font-size: 13px;
+    margin: 0px 30px;
+}
+
+.footer-box > a
+{
+    font-style: italic;
+    font-size: 14px;
+}
+
+.footer-box > div > a
+{
+    margin: 0px 30px;
+    color: #9c9c9c;
+}
+
+.footer-date
+{
+    color: #b4b2b9;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.footer-bold
+{
+    color: #7c7c7c;
+    font-weight: bold;
+}
+
+.footer-box > div > img
+{
+    position: absolute;
+}
+
+#footer-end
+{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-end-block-a, .footer-end-block-b
+{
+    display: inline-block;
+    padding: 10px;
+}
+
+.footer-end-block-a
+{
+    font-family: "Droid Sans", sans-serif;
+    margin-right: 28%;
+    color: #979797;
+    font-size: 13px;
+}
+
+.footer-end-block-b
+{
+    margin-top: 19px;
+}
+
+.footer-end-block-b > a
+{
+    text-decoration: none;
+}
+
+#id
+{
+    color: #a9abae;
+}
+
+
+

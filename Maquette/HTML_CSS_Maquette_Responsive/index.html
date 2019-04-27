@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a website about ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML CSS Maquette Responsive </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaq.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <!---------------------------- HEADER ------------------------------------------------->
+    <header>
+        <div class="header__social-logo">
+            <a href=""><img src="Maquette Responsive/20.png"></a>
+            <a href=""><img src="Maquette Responsive/19.png"></a>
+        </div>
+        
+        <nav>
+            <ul>
+                <div class="img__container">
+                    <img id="header__logo-nav" src="Maquette Responsive/18.png">
+                </div>
+                <li><a href=""> Home </a></li>
+                
+                <li class="header__menu__hidden-container"><a href=""> Book <i class="fas fa-angle-down"></i></a>
+                    <ul class="header__menu__hidden">
+                        <li> Book A </li>
+                        <li> Book B </li>
+                        <li> Book C </li>
+                    </ul>
+                </li>
+                
+                <li class="header__menu__hidden-container"><a href=""> Destinations <i class="fas fa-angle-down"></i></a>
+                    <ul class="header__menu__hidden">
+                        <li> France </li>
+                        <li> Brazil </li>
+                        <li> Algeria </li>
+                    </ul>
+                </li>
+                <li><a href=""> Prices </a></li>
+                <li><a href=""> Alerts </a></li>
+                <li><a href=""> Contact </a></li>
+            </ul>
+        </nav>
+        <div class="container__slider">
+            <div class="header__slider">
+                <div class="header__slider__hidden visible">
+                    <img src="Maquette Responsive/6.jpg" style="width:100%">
+                    <div class="header__slider-text"><p> Tips to travel around the world ! </p></div>
+                </div>
+                
+                <div class="header__slider__hidden">
+                    <img src="Maquette Responsive/7.jpg" style="width:100%">
+                    <div class="header__slider-text"><p> Slide F </p></div>
+                </div>
+                
+                <div class="header__slider__hidden">
+                    <img src="Maquette Responsive/8.jpg" style="width:100%">
+                    <div class="header__slider-text"><p> Slide F </p></div>
+                </div>
+                
+                <div class="header__slider__hidden">
+                    <img src="Maquette Responsive/9.jpg" style="width:100%">
+                    <div class="header__slider-text"><p> Slide F </p></div>
+                </div>
+                
+                <div class="header__slider__hidden">
+                    <img src="Maquette Responsive/10.jpg" style="width:100%">
+                    <div class="header__slider-text"><p> Slide F </p></div>
+                </div>
+                
+                <div class="header__slider__hidden">
+                    <img src="Maquette Responsive/11.jpg" style="width:100%">
+                    <div class="header__slider-text"><p> Slide F </p></div>
+                </div>
+                
+                <div class="slider__img">
+                    <img class="slider__prev" src ="Maquette Responsive/2.png" onclick="prevSlide()">
+                    <img class="slider__next" src ="Maquette Responsive/2.png" onclick="nextSlide()">
+                </div>
+            </div>
+
+            <div class="slider-dot__container">
+                <div class="slider__dot-crop">
+                    <img class="slider__dot slider__dot-crop-red" src="Maquette%20Responsive/1.png" onclick="currentSlide(0)">
+                </div>
+                <div class="slider__dot-crop">
+                    <img class="slider__dot" src="Maquette%20Responsive/1.png" onclick="currentSlide(1)">
+                </div>
+                <div class="slider__dot-crop">
+                    <img class="slider__dot" src="Maquette%20Responsive/1.png" onclick="currentSlide(2)">
+                </div>
+                <div class="slider__dot-crop">
+                    <img class="slider__dot" src="Maquette%20Responsive/1.png" onclick="currentSlide(3)">
+                </div>
+                <div class="slider__dot-crop">
+                    <img class="slider__dot" src="Maquette%20Responsive/1.png" onclick="currentSlide(4)">
+                </div>
+                <div class="slider__dot-crop">
+                    <img class="slider__dot" src="Maquette%20Responsive/1.png" onclick="currentSlide(5)">
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    
+    <!---------------------------- MAIN ---------------------------------------------------->
+    <main>
+        <div class="main__container">
+            <div class="main__block">
+                <div class="main__block__top">
+                    <p> Safe, structured and amazing application </p>
+                    <img src="Maquette Responsive/13.png">
+                </div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nunc tellus, ornare at feugiat quis, posuere a nunc. Praesent sed maximus lorem, sit amet pharetra libero. Sed sed leo vitae risus placerat malesuada sit amet nec lectus. Nulla viverra egestas eros, laoreet fermentum lectus. Praesent sagittis vel risus euismod faucibus. Quisque feugiat metus id ipsum laoreet, id fringilla nibh scelerisque. Suspendisse nec suscipit tortor. Phasellus faucibus lectus leo, id facilisis mi pulvinar vel. Etiam in bibendum dui, vel pellentesque tellus. </p>
+                <a href=""> more info </a>
+            </div>
+            
+            <div class="main__block">
+                <div class="main__block__top">
+                    <p> The sun is shining today, book your trip </p>
+                    <img src="Maquette Responsive/17.png">
+                </div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nunc tellus, ornare at feugiat quis, posuere a nunc. Praesent sed maximus lorem, sit amet pharetra libero. Sed sed leo vitae risus placerat malesuada sit amet nec lectus. Nulla viverra egestas eros, laoreet fermentum lectus. Praesent sagittis vel risus euismod faucibus. Quisque feugiat metus id ipsum laoreet, id fringilla nibh scelerisque. Suspendisse nec suscipit tortor. Phasellus faucibus lectus leo, id facilisis mi pulvinar vel. Etiam in bibendum dui, vel pellentesque tellus. </p>
+                <a href=""> more info </a>
+            </div>
+            
+            <div class="main__block">
+                <div class="main__block__top">
+                    <p> Meet new people and live more intensely </p>
+                    <img src="Maquette Responsive/12.png">
+                </div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nunc tellus, ornare at feugiat quis, posuere a nunc. Praesent sed maximus lorem, sit amet pharetra libero. Sed sed leo vitae risus placerat malesuada sit amet nec lectus. Nulla viverra egestas eros, laoreet fermentum lectus. Praesent sagittis vel risus euismod faucibus. Quisque feugiat metus id ipsum laoreet, id fringilla nibh scelerisque. Suspendisse nec suscipit tortor. Phasellus faucibus lectus leo, id facilisis mi pulvinar vel. Etiam in bibendum dui, vel pellentesque tellus. </p>
+                <a href=""> more info </a>
+            </div>
+        </div>
+        
+        <div class="main__container">
+            <div class="main__destinations">
+                <h2> Destinations </h2>
+                <hr/>
+                
+                <div class="main__slider">
+                    <div class="main__slider-box active">
+                        <img src="Maquette Responsive/3.jpg">
+                        <p> France </p>
+                    </div>                    
+                    
+                    <div class="main__slider-box active">
+                        <img src="Maquette Responsive/4.jpg">
+                        <p> Brazil</p>
+                    </div>                    
+                    
+                    <div class="main__slider-box active">
+                        <img src="Maquette Responsive/5.jpg">
+                        <p> Algeria </p>
+                    </div>                    
+                    
+                    <div class="main__slider-box">
+                        <img src="Maquette Responsive/4.jpg">
+                        <p> Brazil </p>
+                    </div>                    
+                    
+                    <div class="main__slider-box">
+                        <img src="Maquette Responsive/3.jpg">
+                        <p> France </p>
+                    </div>
+                    
+                    <div class="main__slider-box">
+                        <img src="Maquette Responsive/5.jpg">
+                        <p> Algeria </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main__slider__arrow"> 
+            <div class="main__slider-crop">
+                <img class="main__slider__prev" src ="Maquette Responsive/21.png" onclick="prevFlag()">
+                <img class="main__slider__next" src ="Maquette Responsive/22.png" onclick="nextFlag()">
+            </div>
+        </div>
+        <div class="main__bg">
+            <div class="main__container">
+                <div class="main__box">
+                    <h2> About Us </h2>
+                    <hr/>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nunc tellus, ornare at feugiat quis, posuere a nunc. Praesent sed maximus lorem, sit amet pharetra libero. Sed sed leo vitae risus placerat malesuada sit amet nec lectus. Nulla viverra egestas eros, laoreet fermentum lectus. Praesent sagittis vel risus euismod faucibus. Quisque feugiat metus id ipsum laoreet, id fringilla nibh scelerisque. Suspendisse nec suscipit tortor. Phasellus faucibus lectus leo, id facilisis mi pulvinar vel. Etiam in bibendum dui, vel pellentesque tellus. 
+                    <br/>
+                    <br/>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nunc tellus, ornare at feugiat quis, posuere a nunc. Praesent sed maximus lorem, sit amet pharetra libero. Sed sed leo vitae risus placerat malesuada sit amet nec lectus. Nulla viverra egestas eros, laoreet fermentum lectus. Praesent sagittis vel risus euismod faucibus. Quisque feugiat metus id ipsum laoreet, id fringilla nibh scelerisque. Suspendisse nec suscipit tortor. Phasellus faucibus lectus leo, id facilisis mi pulvinar vel. Etiam in bibendum dui, vel pellentesque tellus. pharetra libero. Sed sed leo vitae risus placerat malesuada sit amet nec lectus. Nulla viverra egestas eros, laoreet fermentum lectus. Praesent sagittis vel risus euismod faucibus. Quisque feugiat metus id ipsum laoreet, id fringilla nibh scelerisque. Suspendisse nec suscipit tortor. Phasellus faucibus lectus leo, id facilisis mi pulvinar vel. Etiam in bibendum dui, vel pellentesque tellus.</p>
+                </div>
+                
+                <div class="main__box">
+                    <h2> Why Us </h2>
+                    <hr/>
+                    <div>
+                        <img src="Maquette Responsive/14.png">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nunc tellus, ornare at feugiat quis, posuere a nunc. Praesent sed maximus lorem, sit amet pharetra libero.</p>
+                    </div>
+                    
+                    <div>
+                        <img src="Maquette Responsive/15.png">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nunc tellus, ornare at feugiat quis, posuere a nunc. Praesent sed maximus lorem, sit amet pharetra libero. Sed sed leo vitae risus placerat malesuada sit amet nec lectus. </p>
+                    </div>
+                    
+                    <div>
+                        <img src="Maquette Responsive/16.png">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nunc tellus, ornare at feugiat quis, posuere a nunc. Praesent sed maximus lorem, sit amet pharetra libero. </p>
+                    </div>
+                </div>
+            </div>  
+            <div class="main__box-3">
+                <h2> How to travel ? </h2>
+                <hr/>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nunc tellus, ornare at feugiat quis, posuere a nunc. Praesent sed maximus lorem, sit amet pharetra libero. Sed sed leo vitae risus placerat malesuada sit amet nec lectus. Nulla viverra egestas eros, laoreet fermentum lectus. Praesent sagittis vel risus euismod faucibus. </p>
+                <button> Subscribe </button>
+            </div>
+        </div>
+    </main>
+    
+    <!---------------------------- FOOTER ------------------------------------------------->
+    <footer>
+        <div class="footer__container">
+            <div class="footer__link">
+                <a href=""> Home </a>
+                <a href=""> Book </a>
+                <a href=""> Destinations </a>
+                <a href=""> Prices </a>
+                <a href=""> Alerts </a>
+                <a href=""> Contact </a>
+            </div>
+        </div>  
+        <div class="footer__container">  
+            <p> &copy; There is no birds here </p>
+            <p> Look around</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
