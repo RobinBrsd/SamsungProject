@@ -1,0 +1,11 @@
+db.createCollection( "Users",
+   { validator: { $and:
+      [
+         { Id: { $type: "int" } },
+         { Login: { $type: "string" } },
+         { Email: { $type: "string", $regex: '^[^\W][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\@[a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\.[a-zA-Z]{2,4}$'} },
+         { Password: { $type: "string" } },
+         { Admin: { $type: "bool"} }
+      ]
+   }
+})
