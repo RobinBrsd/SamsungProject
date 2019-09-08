@@ -1,0 +1,234 @@
+@import '../../styles/variables';
+
+body {
+    background-image:url(https://www.ldlc.com/v4/img/public/bg-configurateur.jpg);
+}
+
+.nav {
+    background-color: $primary;
+    border-bottom: 2px solid $secondary;
+    display: flex;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.16), 0 3px 4px rgba(0,0,0,0.23);
+}
+
+// Logo Style
+.logoContainer {
+    border-right: 1px solid $secondary;
+    display: flex;
+    width: 11em;
+    padding: 7px 20px;
+
+    .logo {
+        width: -webkit-fill-available;
+    }
+}
+
+.panierMiniTotal {
+    position: absolute;
+    right: 15px;
+    top: 26px;
+    background-color: $ultraLightGrey;
+    font-size: 14px;
+    padding: 1px 6px;
+    border-radius: 40px;
+    border: 1px solid $secondary;
+    color: $primary;
+    font-weight: bold;
+}
+
+// Link Style
+.linkContainer {
+    padding: $padding;
+    display: flex;
+    flex: 1 1;
+    max-width: 550px;
+    margin: 0 auto;
+    align-items: center;
+
+    .link {
+        color: $ultraLightGrey;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0px 13px;
+        transition: all ease 0.6s;
+        &:hover {
+            color: $secondary;
+        }
+    }
+    
+    .active {
+        color: $secondary;
+    }
+}
+
+// Search Style 
+.searchContainer {
+    padding: $padding;
+    display: flex;
+    flex: 1 1;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        width: 90%;
+    }
+
+    .searchField {
+        padding: 0px 3px;
+        border-bottom: 1px solid white;
+        display: flex;
+    
+        input {
+            background: none;
+            border: none;
+            width: 95%;
+            font-size: 16px;
+            color: $ultraLightGrey;
+        }
+    
+        .btnSubmit {
+            background: none;
+            border: none;
+            padding: 0;
+            margin-top: -6px;
+        }
+        
+        .loupeIcon {
+            height: 20px;
+            margin-bottom: -3px;
+            stroke: white;
+            transition: all ease 0.5s;
+        
+            &:hover {
+                cursor: pointer;
+                color: $secondary;
+            }
+        }
+    }
+
+    .autoCompleteContainer {
+        position: absolute;
+        top: 52px;
+        background-color: $ultraLightGrey;
+        list-style-type: none;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        opacity:1;
+        width: 30%;
+        right: 0;
+        left: 376px;
+        z-index: 999;
+        border: 1px solid $secondary;
+        transition:0.6s all ease;
+
+        li {
+            padding: 10px;
+            cursor: pointer;
+            font-weight: 550;
+            transition:0.6s all ease;
+
+            &:hover {
+                background-color:$lightGrey;
+            }
+        }
+    }
+
+    .hiddenAutoComplete {
+        @extend .autoCompleteContainer;
+        opacity: 0;
+        transition:0.6s all ease;
+    }
+}
+
+// Infos Style
+.userContainer {
+    padding: 0px $padding;
+    flex: 1 1;
+    display: flex;
+    max-width: 175px;
+    margin: 0;
+    align-items: center;
+    border:1px solid $secondary;
+    border-bottom: none;
+    border-top: none;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s all ease;
+    position: relative;
+
+    &:hover {
+        background-color: $secondary;
+        border-bottom: 3px solid $primary;
+        box-shadow: 0 3px 0 $primary;
+
+        .userLogo {
+            fill:$primary;
+            stroke:$primary;
+        }
+    }
+
+    p {
+        letter-spacing: 0.7px;
+        margin: 0;
+        text-align: center;
+        padding: $padding 0px;
+    }
+
+    .userLogo {
+        height: 26px;
+        margin-bottom: -5px;
+        margin-right: 7px;
+        stroke: $secondary;
+        fill:$secondary;
+    }
+}
+
+.panierContainer {
+    padding: 0px $padding;
+    display: flex;
+    flex: 1 1;
+    max-width: 175px;
+    margin: 0;
+    align-items: center;
+    text-decoration: none;
+    color: $ultraLightGrey;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s all ease;
+    position: relative;
+
+    &:hover {
+        background-color: $secondary;
+        border-bottom: 3px solid $primary;
+        box-shadow: 0 3px 0 $primary;
+
+        .panierLogo {
+            fill:$primary;
+            stroke:$primary;
+        }
+    }
+
+    a {
+        letter-spacing: 0.7px;
+        margin: 0;
+        text-align: center;
+        padding: $padding 0px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .panierLogo {
+        height: 27px;
+        margin-bottom: -5px;
+        margin-right: 3px;
+        stroke: $secondary;
+        fill:$secondary;
+    }
+}
+
+.hidden {
+    display: none;
+}

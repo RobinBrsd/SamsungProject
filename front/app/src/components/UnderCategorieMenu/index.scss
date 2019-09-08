@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+
+.categorieContainer {
+    display: flex;
+    flex-direction: column;
+    min-width: 215px;
+    background-color: $lightGrey;
+    position: absolute;
+    border-right: 1px solid $primary;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16), 0 1px 4px rgba(0, 0, 0, 0.23);
+
+    .menuTitle {
+        font-size: 15px;
+        border-bottom:1px solid $primary;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: $primary;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s all ease;
+        align-items: center;
+        display: flex;
+        padding: 13px;
+        padding-left: 10px;
+    }
+
+    .iconTitle {
+        margin-right: 10px;
+        font-size: 35px;
+    }
+
+    .menuLink {
+        border:1px solid $primary;
+        border-right: none;
+        border-top: none;
+        padding: $padding;
+        color: $primary;
+        text-decoration: none;
+        transition: 0.1s all ease;
+        font-size: 14px;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $ultraLightGrey;
+            font-weight: bold;
+        }
+    }
+}

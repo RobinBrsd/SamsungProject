@@ -1,0 +1,72 @@
+@import '../../../styles/variables';
+
+.formLogin {
+    position: absolute;
+    top:70px;
+    flex-direction: column;
+    display: flex;
+    background-color: $primary;
+    padding: 20px;
+    border: 1px solid $secondary;
+    z-index: 9999;
+    padding-top: 15px;
+    text-align: center;
+    color:$ultraLightGrey;
+    opacity: 1;
+    transition: 0.5s opacity ease-in-out;
+    width: 82%;
+    
+    .formTitle {
+        padding-bottom: 10px; 
+        font-size:18px;
+    }
+
+    .bar {
+        width:50%;
+        border-color: $secondary;
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form > input {
+        margin: 5px 0px;
+        border: 1px solid $secondary;
+        padding: 5px 10px;
+        border-radius: 2px;
+    }
+
+    form > button, button {
+        margin: 5px 0px;
+        background-color: $secondary;
+        color:$ultraLightGrey;
+        padding: 5px 10px;
+        border: 1px solid $ultraLightGrey;
+        letter-spacing:0.3px;
+        font-size:15px;
+        border-radius: 2px;
+        cursor:pointer;
+    }
+}
+
+.error {
+    color: red;
+    display: block;
+    padding: 2px !important;
+    margin: 8px 5px !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.hiddenForm {
+    @extend .formLogin;
+    transition: 0.1s opacity ease-in;
+    opacity: 0;
+    z-index: -9999;
+}

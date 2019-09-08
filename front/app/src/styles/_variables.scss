@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+// The Buyer
+$blue: #084887;
+$darkBlue: #5AB9EA;
+
+
+// New Colors ??
+$a: #5680E9;
+$b: #84CEEB;
+$c: #5AB9EA;
+$d: #C1C8E4;
+$f: #8860D0;
+
+// Main colors
+$green: #679e24;
+$red: #d0021b;
+$black: #000;
+
+// Greys
+$darkGrey: #646464;
+$grey: #999999;
+$lightGrey: #eff0f2;
+$ultraLightGrey: #f6f7f8;
+
+// Refs
+$primary: $blue;
+$secondary: $darkBlue;
+$text: $black;
+$background: $lightGrey;
+$line: $lightGrey;
+
+// Shadows
+$shadow: 0 0 10px rgba(162, 160, 231, 0.25);
+$greyShadowHeight: 25px;
+
+// POLICE
+$logoFont : 'Montserrat Subrayada', sans-serif; 
+$defaultFont : 'Source Sans Pro', sans-serif;
+
+// Margin / Padding
+$padding: 20px;
+
+// Breakpoints
+$breakpoints: (
+	mobile: 425px,
+	tablet: 768px,
+	laptop: 1024px,
+	desktop: 1440px,
+	xxl: 2560px,
+);

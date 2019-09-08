@@ -1,0 +1,197 @@
+@import '../../../styles/variables';
+
+.productContainer {
+    position: relative;
+    display: contents;
+    cursor: pointer;
+    &:hover > .productItemContainer {
+        transition: 0.3s all ease;
+        transform: scale(1.05);
+    }
+
+    &:hover > .productHomeItemContainer {
+        transition: 0.3s all ease;
+        transform: scale(1.05);
+    }
+    
+}
+
+.fakeProductContainer {
+    position: relative;
+    display: contents;
+    visibility: hidden;
+}
+
+.productItemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 520px 1;
+    background-color: $ultraLightGrey;
+    border-left: 5px solid $primary;
+    margin: $padding;
+    padding: $padding;
+    padding-bottom: 6px;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+    outline: 0.3px solid transparent;
+    transition: outline 1s;
+    transition: 0.3s all ease;
+
+    .productImg {
+        max-height:250px;
+        border-radius: 2px;
+        margin-right: $padding;
+        border: 1px solid $secondary;
+        max-width: 250px;
+        width: 45%;
+    }
+    
+    .productTitle {
+        max-width: 100%;
+        width: 100%;
+        overflow: hidden;
+        color: $primary;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        max-height: 50px;
+        height: 50px;
+        margin-top: 0;
+        font-size: 17px;
+    }
+    
+    .productDescription {
+        max-width: 320px;
+        color: black;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 27px;
+        max-height:212px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 0px;
+
+        .descLabel {
+            color: $secondary;
+            font-weight:bold;
+        }
+    }
+    
+    .productPrice {
+        color: $secondary;
+        font-size: 21px;
+        font-weight: 400;
+        text-align: end;
+        margin: 0;
+    }
+    
+    .productOldPrice {
+        text-decoration: line-through;
+        color: $grey;
+        display: inline-block;
+        margin: 0;
+    }   
+    .productPriceReduc {
+        color: red;
+    }
+
+    .productRight {
+        flex: 100px;
+    }
+}
+
+.ratingContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: end;
+}
+
+
+// IF PAGE HOME
+.productHomeItemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 430px 1;
+    background-color: $ultraLightGrey;
+    border-left: 5px solid $primary;
+    margin: $padding;
+    padding: $padding;
+    padding-bottom: 6px;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+    outline: 0.3px solid transparent;
+    transition: outline 1s;
+    transition: 0.3s all ease;
+
+    .productHomeImg {
+        max-height:170px;
+        border-radius: 2px;
+        margin-right: $padding;
+        border: 1px solid $secondary;
+        max-width: 250px;
+        width: 40%;
+    }
+    
+    .productHomeTitle {
+        max-width: 100%;
+        width: 100%;
+        overflow: hidden;
+        color: $primary;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        max-height: 50px;
+        height: 44px;
+        margin-top: 0;
+        font-size: 17px;
+    }
+    
+    .productHomeDescription {
+        max-width: 320px;
+        color: black;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 27px;
+        max-height:180px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 0px;
+
+        .descHomeLabel {
+            color: $secondary;
+            font-weight:bold;
+        }
+    }
+    
+    .productHomePrice {
+        color: $secondary;
+        font-size: 21px;
+        font-weight: 400;
+        text-align: end;
+        margin: 0;
+    }
+    
+    .productHomeOldPrice {
+        text-decoration: line-through;
+        color: $grey;
+        display: inline-block;
+        margin: 0;
+    }   
+    .productHomePriceReduc {
+        color: red;
+    }
+
+    .productHomeRight {
+        flex: 100px;
+    }
+}
+
+.ratingHomeContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: end;
+}

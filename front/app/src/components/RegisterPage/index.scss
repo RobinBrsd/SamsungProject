@@ -1,0 +1,57 @@
+@import '../../styles/variables';
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+
+    form {
+        margin-top: 100px;
+        display: inline-grid;
+        width: 20%;
+        padding: $padding * 3;
+        padding-top: 0;
+        padding-bottom: 30px;
+        background-color: $lightGrey;
+        border: 1px solid $primary;
+        border-radius: 2px;
+
+        h1 {
+            padding: $padding 3px;
+            color: $secondary;
+        }
+
+        .field {
+            margin: 8px;
+            padding: 2px 5px;            
+            background: none;
+            border: none;
+            width: 95%;
+            font-size: 17px;
+            border-bottom: 1px solid $primary;
+        }
+
+        .submit {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 300px;
+            padding: 5px 0px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $primary;
+            background-color: $ultraLightGrey;
+            border: 1px solid $primary;
+            cursor: pointer;
+        }
+    }
+}
+
+.error {
+    color: red;
+    border: 1px solid;
+    padding: 7px 10px;
+    margin: 15px 25px;
+}
+
+.hidden {
+    display: none;
+}

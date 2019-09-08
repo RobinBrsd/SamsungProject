@@ -1,0 +1,94 @@
+@import '../../styles/variables';
+
+.allCommandesContainer {
+    padding: 32px 250px;
+}
+
+.commandesContainerBackground {
+    background-color: $lightGrey;
+    border-top: 10px solid $primary;
+    border-bottom: 1px solid $secondary;
+    border-radius: 1px;
+    padding: 10px 20px;
+    padding-top: 0; 
+    box-shadow: 0 0 10px rgba(162, 160, 231, 0.25);
+}
+
+.commandeContainer {
+    border: 1px solid $primary;
+    margin: 20px;
+    margin-bottom: 40px;
+    background-color: $ultraLightGrey;
+    box-shadow: 0 0 10px rgba(162, 160, 231, 0.25);
+
+    .referenceContainer {
+        border:1px solid $primary;
+        display: flex;
+        align-items: center;
+    }
+
+    .date {
+        padding: 10px 8px;
+        margin: 0px;
+        flex: 1;
+        font-weight: bold;
+    }
+
+    .status {
+        padding: 10px 8px;
+        margin: 0px;
+        font-weight: bold;
+        color:white;
+        background-color: #084887;
+        border-left: 2px solid $primary;
+    }
+}
+
+.itemSuivisContainer {
+    padding: 15px;
+    border-top: 1px solid $primary;
+
+    .suivisInfos {
+        display: flex;
+
+        .suivisPrix {
+            flex: 1;
+        }
+    }
+
+    .imgSuivisProduit {
+        width: 130px;
+        max-height: 110px;
+        float: left;
+        margin-right: 15px;
+        padding-right: 15px;
+        border-right: 1px solid $primary;
+    }
+}
+
+.totalSuivis {
+    display: flex;
+    border-top: 2px solid $primary;
+    padding: 0px 40px;
+    padding-right: 0px;
+
+    .flexSuivisItem {
+        flex:1;
+    }
+}
+
+.promotionTips {
+    color: $grey;
+    margin-left:5px;
+    font-size: 12px;
+}
+
+.factureAsk {
+    background-color:$primary;
+    color: #fff;
+    cursor:pointer;
+    border: none;
+    letter-spacing: 0.7px;
+    margin-left: 40px;
+    min-width: 172px;
+}

@@ -1,0 +1,35 @@
+@import '../../../styles/variables';
+
+.itemPanierContainer {
+    background-color: $lightGrey;
+    padding: 10px 15px;
+    margin:15px 0px;
+    border-left: 4px solid $primary;
+    border-right: 2px solid $secondary;
+    box-shadow: 0 0 10px rgba(162, 160, 231, 0.25);
+
+    .itemPanierTitle {
+        margin-top: 0px;
+        color: $primary;
+        font-size: 19px;
+    }
+
+    .itemInfosContainer {
+        display: flex;
+        align-items: center;
+
+        div {
+            flex: 1;
+        }
+
+        div > p {
+            margin:5px 0px;
+        }
+    }
+
+    .MuiFab-root {
+        width: 40px;
+        height: 40px;
+        color: $secondary;
+    }
+}

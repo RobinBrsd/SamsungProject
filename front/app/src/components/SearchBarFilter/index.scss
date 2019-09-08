@@ -1,0 +1,66 @@
+@import '../../styles/variables';
+
+@import '../../styles/variables';
+.filterBar {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 20px;
+    border-bottom: 1px solid $primary;
+    border-top: 5px solid $primary;
+    padding-bottom: $padding;
+
+    .formFilter {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.filterTitle {
+    margin: 0px;
+    margin-top: 15px;
+    font-size: 17px;
+    text-align: center;
+    border-bottom: 1px solid $primary;
+    border-width: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.reglette {
+    width: 92%;
+    margin: 12px auto;
+    p {
+        color: gray;
+        margin: 0;
+        margin-left: -6px;
+    }
+}
+
+.MuiFormControl-root {
+    margin: 5px 0px !important  ;
+}
+
+.btnFilter {
+    height: 35px;
+    width: 92%;    
+    background-color: $primary;
+    border: 1px solid $ultraLightGrey;
+    text-transform: uppercase;
+    letter-spacing: 0.6;
+    color: #f6f7f8;
+    border-radius: 3px;
+    transition: 0.4s all ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $lightGrey;
+        border: 1px solid $primary;
+        color: $primary;
+    }
+}
+
+.btnFilterContainer {
+    text-align: center;
+}

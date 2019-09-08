@@ -1,0 +1,182 @@
+@import '../../styles/variables';
+
+.detailProduct {
+    padding: 25px 250px;
+    padding-right: 50px;
+
+    .magnifier {
+        border: 1px solid $primary;
+        margin-left: 5px;
+    }
+
+    .detailProductBackground {
+        background-color: $ultraLightGrey;
+        border-top: 10px solid $primary;
+        border-radius: 2px;
+        padding: 20px 30px;
+    }
+
+    .smallPicProduct {
+        cursor: pointer;
+        ul {
+            list-style-type:none; 
+        }
+    }
+
+    .picContainer {
+        position: relative;
+        width: 750px;
+        height: 450px;git
+
+        .bigPicProduct {
+            margin: 0px 40px;
+            border: 1px solid $secondary;
+            position: absolute;
+            max-width: 550px;
+        }
+    }
+
+    .descProduct {
+        border-left: 1px solid $primary;
+        padding: 0px 30px;
+        max-width: 55%;
+    }
+
+    .infosContainer {
+        display: flex;
+    }
+
+    .left {
+        text-align: end;
+        padding: 30px 10px;
+        margin-bottom: 0;
+        color: gray;
+    }
+
+    .titleProduct {
+        border-bottom: 2px solid #084887;
+        padding-bottom: 25px;
+        padding-left: 15px;
+        font-size: 20px;
+        color: #084887;
+        margin-top: 5px;
+    }
+
+    .label {
+        font-size: 17px;
+        border-bottom: 1px solid $primary; 
+        color: $primary;
+        font-size: 19px;
+    }
+
+    .bottomContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-right: 30px;
+
+        .price {
+            text-align: end;
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+
+        .button {
+            display: flex;
+            position: relative;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 21px;
+            cursor: pointer;
+        }
+
+        .buttonBackground {
+            display: flex;
+            align-items: center;
+            background-color: $primary;
+            padding: 10px 15px;
+            border: 1px solid $ultraLightGrey;
+            color: $ultraLightGrey;
+            border-radius: 5px;
+            transition: 0.5s all ease;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+
+        .dv-star-rating {
+            margin-bottom: 15px;
+            font-size: 19px;
+        }
+        
+        .priceSoldContainer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .priceSold {
+            text-align: end;
+            font-size: 23px;
+            margin:0;
+            text-decoration: line-through;
+            color: $grey;
+            display: inline-block;
+            margin-right:7px;
+        }
+
+
+        .newPrice {
+            text-align: end;
+            margin-top: 0px;
+            font-size: 26px;
+            margin-bottom: 5px;
+            color: green;
+        }
+
+        .priceReduc {
+            color: red;
+            text-align: end;
+            font-size: 20px;
+            margin: 0px;
+        }
+    }
+}
+
+
+// BTN Panier Style
+.btnPanier {
+    height: 37px;
+    width: 37px;
+    background-color: $ultraLightGrey;
+    border-radius: 20px;
+    margin: 0px 12px;
+    margin-right: 0px;
+}
+
+.logoPanier {
+    width: 21px;
+    height: 21px;
+    stroke: $primary;
+    fill: $primary;
+    margin: 7px 8px;
+}
+
+.counter {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+
+    p {
+        font-size:18px
+    }
+
+    button {
+        width: 28px;
+        height: 28px;
+        border-radius: 50px;
+        margin: 10px;
+        cursor: pointer;
+    }
+}

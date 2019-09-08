@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+
+.homeCategorieContainer {
+    display: flex;
+    flex-direction: column;
+    min-width: 215px;
+    background-color: $ultraLightGrey;
+    position: absolute;
+    border-right: 1px solid $primary;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16), 0 1px 4px rgba(0, 0, 0, 0.23);
+
+    .homeMenuTitle {
+        font-size: 20px;
+        border-bottom:1px solid $primary;
+        margin: 0;
+        padding: $padding;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: $primary;
+        color: white;
+    }
+
+    .homeMenuLink {
+        border:1px solid $primary;
+        border-right: none;
+        border-top: none;
+        padding: $padding;
+        color: $primary;
+        text-decoration: none;
+        transition: 0.1s all ease;
+        font-size: 14px;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $lightGrey;
+            font-weight: bold;
+        }
+    }
+}

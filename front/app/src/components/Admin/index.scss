@@ -1,0 +1,334 @@
+@import '../../styles/variables';
+
+.sectionAdminContainer {
+    padding: 32px 215px;
+}
+
+.sectionAdminBackground {
+    background-color: $ultraLightGrey;
+    border-top: 10px solid $primary;
+    border-bottom: 1px solid $secondary;
+    border-radius: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    padding-top: 0; 
+    box-shadow: 0 0 10px rgba(162, 160, 231, 0.25);
+    max-height: 710px;
+    overflow: scroll;
+    position: relative;
+}
+
+.sectionAdminTitle {
+    padding-left: 25px;
+    background-color: $ultraLightGrey;
+    border-radius: 2px;
+    border: 1px solid $primary;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: $ultraLightGrey;
+    margin-top: 0;
+    border-top: none;
+    display: table;
+    background-color: $primary;
+    border-bottom: 3px solid $secondary;
+    width: max-content;
+}
+
+.adminProductContainer {
+    border: 1px solid $primary;
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.adminProductCase {
+    border-right: 1px solid $primary;
+    height: 100px;
+    max-width: 340px;
+    padding-bottom: 10px;
+}
+
+.productCaseTitle {
+    border-bottom: 1px solid $primary;
+    min-width: 75px;
+    display: block;
+    text-align: center;  
+    padding: 3px;
+    color: $primary;
+}
+
+.productCaseInfos {
+    text-align: center;
+    display: block;
+    padding: 10px 0px;
+}
+
+.adminProductImg {
+    min-width: 100px;
+    max-width: 100px;
+    border-right: 1px solid $primary;
+}
+
+.adminEditProduct {
+    border:1px solid white;
+    height: 110px;
+    background-color:$primary;
+    width: 80px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    transition: 0.3s all ease;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: $secondary;
+    }
+}
+
+.adminDeleteProduct {
+    border:1px solid white;
+    height: 110px;
+    background-color: #cd0027;
+    width: 80px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.7px;
+    transition: 0.3s all ease;
+
+    &:hover {
+        background-color: palevioletred;
+    }
+}
+
+.sectionAdminList {
+    margin: 0 auto;
+}
+
+// SECTION CATEGORIES
+.adminCategoriesCase {
+    border-right: 1px solid $primary;
+    height: 100px;
+    max-width: 340px;
+    padding-bottom: 10px;
+    flex:1;
+}
+
+.productCategoriesTitle {
+    border-bottom: 1px solid $primary;
+    min-width: 75px;
+    display: block;
+    text-align: center;  
+    padding: 3px;
+    color: $primary;
+}
+
+.categoriesCaseInfos {
+    text-align: center;
+    display: block;
+    padding: 10px;
+}
+
+.categoriesList {
+    margin: 10px;
+}
+
+.addCategories {
+    position: absolute;
+    top: 70px;
+    right: 150px;
+    display: grid;
+    background-color: $primary;
+    border: 2px solid $secondary;
+    border-radius: 3px;
+    padding: 20px;
+    padding-top: 5px;
+
+    h3 {
+        margin: 10px 4px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    input {
+        margin:2px;
+    }
+
+    select {
+        width: 98%;
+        margin: 2px auto;
+    }
+
+    button {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    textarea {
+        resize: none;
+        padding: 5px;
+        width: 93%;
+        margin: 0 auto;
+    }
+}
+
+.addSousCategories {
+    position: absolute;
+    top: 330px;
+    right: 150px;
+    display: grid;
+    background-color: $primary;
+    border: 2px solid $secondary;
+    border-radius: 3px;
+    padding: 20px;
+    padding-top: 5px;
+
+    h3 {
+        margin: 10px 4px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    input {
+        margin:2px;
+    }
+
+    select {
+        width: 98%;
+        margin: 2px auto;
+    }
+
+    button {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    textarea {
+        resize: none;
+        padding: 5px;
+        width: 93%;
+        margin: 0 auto;
+    }
+}
+
+.addCodePromo {
+    position: absolute;
+    top: 282px;
+    left: -5px;
+    display: grid;
+    background-color: $primary;
+    border: 2px solid $secondary;
+    border-radius: 3px;
+    padding: 20px;
+    padding-top: 5px;
+    z-index: 99;
+
+    h3 {
+        margin: 10px 4px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    input {
+        margin:2px;
+    }
+
+    .number {  
+        width: 90%;
+        margin: 2px auto;
+        margin-bottom: 12px;
+    }
+
+    button {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    textarea {
+        resize: none;
+        padding: 5px;
+        width: 93%;
+        margin: 0 auto;
+    }
+}
+
+.bar-red {
+    height: 110px;
+    width: 30px;
+    background-color:#cd0027;
+    border-right: 1px solid $primary;
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.bar-green {
+    height: 110px;
+    width: 30px;
+    background-color: #69e019;
+    border-right: 1px solid $primary;
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.bar-yellow {
+    height: 110px;
+    width: 30px;
+    background-color:#ffbf1c;
+    border-right: 1px solid $primary;
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.btnAddProduct {
+    width: 90%;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: $primary;
+    border: 2px solid $secondary;
+    color:#fff;
+    border-radius: 2px;
+    text-decoration:none;
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+    margin-bottom: 35px;
+    cursor:pointer;
+    transition: 0.3s all ease;
+
+    &:hover {
+        background-color: #fff;
+        color: $primary;
+        border-color: $primary
+    }
+}
+
+.orderProductContainer {
+    display: grid;
+    button {
+        background-color: green;
+        padding: 17px;
+        border: 1px solid #fff;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 0.7px;
+        transition: 0.3s all ease;
+        cursor:pointer;
+        
+        &:hover {
+            background-color: #69e019;
+        }
+    }
+}
