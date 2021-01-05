@@ -10,7 +10,7 @@
   "dependencies": {
     "@material-ui/core": "^4.3.2",
     "@react-native-community/slider": "^2.0.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "expo": "^34.0.1",
     "expo-contacts": "^6.0.0",
     "react": "16.8.3",
